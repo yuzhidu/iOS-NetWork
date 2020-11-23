@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A40D24131F063E500071DEFA /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40D24121F063E500071DEFA /* CocoaAsyncSocket.framework */; };
-		A40D24141F063E580071DEFA /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40D24121F063E500071DEFA /* CocoaAsyncSocket.framework */; };
-		A40D24151F063E580071DEFA /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A40D24121F063E500071DEFA /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C90B034256B9B0200318433 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40D24121F063E500071DEFA /* CocoaAsyncSocket.framework */; };
+		0C90B035256B9B0200318433 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A40D24121F063E500071DEFA /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A453BBA21F060FDE00EEC743 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A453BBA11F060FDE00EEC743 /* main.m */; };
 		A453BBBB1F060FDE00EEC743 /* IMClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A453BBBA1F060FDE00EEC743 /* IMClientTests.m */; };
 		A453BBC61F060FDE00EEC743 /* IMClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A453BBC51F060FDE00EEC743 /* IMClientUITests.m */; };
 		A453BBDC1F06101800EEC743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A453BBD71F06101800EEC743 /* Assets.xcassets */; };
 		A453BBDD1F06101800EEC743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A453BBD81F06101800EEC743 /* LaunchScreen.storyboard */; };
-		A453BBDE1F06101800EEC743 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A453BBDA1F06101800EEC743 /* Info.plist */; };
 		A453BBEE1F06107300EEC743 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A453BBE21F06107300EEC743 /* AppDelegate.m */; };
 		A453BC3E1F06298900EEC743 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = A453BC021F06298900EEC743 /* IQNSArray+Sort.m */; };
 		A453BC3F1F06298900EEC743 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A453BC041F06298900EEC743 /* IQUIScrollView+Additions.m */; };
@@ -65,13 +63,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A40D24161F063E580071DEFA /* Embed Frameworks */ = {
+		0C90B036256B9B0200318433 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A40D24151F063E580071DEFA /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				0C90B035256B9B0200318433 /* CocoaAsyncSocket.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,8 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A40D24141F063E580071DEFA /* CocoaAsyncSocket.framework in Frameworks */,
-				A40D24131F063E500071DEFA /* CocoaAsyncSocket.framework in Frameworks */,
+				0C90B034256B9B0200318433 /* CocoaAsyncSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +182,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C90B033256B9B0200318433 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A453BB941F060FDE00EEC743 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +196,7 @@
 				A453BBB91F060FDE00EEC743 /* IMClientTests */,
 				A453BBC41F060FDE00EEC743 /* IMClientUITests */,
 				A453BB9E1F060FDE00EEC743 /* Products */,
+				0C90B033256B9B0200318433 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -454,7 +459,7 @@
 				A453BB991F060FDE00EEC743 /* Sources */,
 				A453BB9A1F060FDE00EEC743 /* Frameworks */,
 				A453BB9B1F060FDE00EEC743 /* Resources */,
-				A40D24161F063E580071DEFA /* Embed Frameworks */,
+				0C90B036256B9B0200318433 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -531,6 +536,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -554,7 +560,6 @@
 				A453BBDC1F06101800EEC743 /* Assets.xcassets in Resources */,
 				A453BBDD1F06101800EEC743 /* LaunchScreen.storyboard in Resources */,
 				A453BC4C1F06298900EEC743 /* IQKeyboardManager.bundle in Resources */,
-				A453BBDE1F06101800EEC743 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
